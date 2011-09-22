@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+<post>
+<path>
+/posts/how-many-cs.html
+</path>
+<tags>
+cs,funny,freshman
+</tags>
+</post>
+
+
+<post>
+<path>
+/posts/welcome.html
+</path>
+<tags>
+daily,nerd,welcome,techstack,tech,stack
+</tags>
+</post>
+
+
+</root>

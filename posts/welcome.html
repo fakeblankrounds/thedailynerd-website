@@ -1,0 +1,19 @@
+<h1> Daily Nerd Tech Stack </h1>
+<p>thedailynerd.com was built entirely from the ground up using 
+<ul>
+<li><a href="http://www.nodejs.org">Node.js</a></li>
+<li> HTML</li>
+<li> CSS</li>
+<li> Javascript</li>
+</ul>
+On top of Amazon's EC2 platform. Node handles everything from generating any search results (which includes the front page, as a request to index.html results in a search query for posts 1-10), to serving css and javascript files in the background.On boot, the server will access our Amazon S3 bucket and automatically pull its template files and parse them. Any requests made for any files from the server automatically hit the S3 bucket if the server doesn’t find them already loaded in memory. Though it will load any files that are hit into memory as soon as it retrieves 
+them from S3 so further requests for a file will always hit memory instead of S3. </p>
+<p>
+Inside node  our site is equipped to handle a few different requests.
+<ul>
+<li> &quot;?num=#:#&quot; request (where ‘#’ is a number) will return the posts in order from the first number to the second number(newest to oldest). If the first number is larger than the second number it will return all the posts in reverse order (oldest to newest).</li>
+<li> &quot;?post=posts/<name>.html&quot; will return a post that is located in that path. All posts come from memory as dictated by a “posts.xml” file on the server. So it will only pull known files from the server.</li>
+<li> &quot;?where=tag” will return any posts marked with what ever tag is requested. Simple as that. If I mark a post “funny” “?where=funny” will return that post (and any other posts i marked funny).</li>
+<li>&quot;?tags=post/<name>.html&quot; will return the tags for a given post. It’s not particularly useful at the moment and I haven’t implemented them into site yet but hopefully they will eventually show (maybe in a popup) what a given post is tagged</li>
+</ul>
+That’s about it for this site. More features will come with time as I develop the engine that powers it. I will update this post with a github link to the source of the entire engine so that anyone can use it. </p>
