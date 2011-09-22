@@ -5,19 +5,26 @@ FFFFFF
 6E85B8
 165170
 */
+html
+{
+background-color:#E5E5E5;
+}
 body
 {
 	top:50px;
 	bottom:0px;
 	left:0;
+	margin:0;
 	width:100%;
 	height:100%;
 	z-index:-10;
 	font-weight:bold;
 	font-size:16px;
 	color:#444;
-	font-family:  'Droid Sans', sans-serif;
-}
+	background-color:#E5E5E5;
+	font-family:  'Helvetica Neue', Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+
+	}
 a
 {
 	color:#6E85B8;
@@ -42,7 +49,7 @@ a.more
 
 p
 {
-	font-family: 'Droid Sans', sans-serif;
+	/*font-family:  'Helvetica Neue', Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;*/
 }
 p.subtext
 {
@@ -89,7 +96,7 @@ h4.readable
 {
 	line-height:1.5em;
 	letter-spacing:0em;
-	font-family: 'Droid Serif', serif;
+	/*font-family:  'Helvetica Neue', Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;*/
 }
 .expandable
 {
@@ -103,9 +110,14 @@ h4.readable
 .group:after {
     clear:both;
 }
+div.full
+{
+	width:100%;
+	height:100%;
+}
 div.centered
 {
-	background-color: #FFF;
+	/*background-color: #FFF;*/
 	position: relative;
 	top:0;
 	bottom:0;
@@ -127,7 +139,7 @@ div.buttonbox
 	height: 100%;
 	padding-left:1em;
 	padding-right:1em;
-	font-family:  'Droid Sans', sans-serif;
+	/*font-family:   'Helvetica Neue', Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;*/
 	margin: 1px;
 	/* box-shadow: 5px 5px 5px #888888;
 	-webkit-box-shadow: 5px 5px 5px #888888; */
@@ -198,9 +210,12 @@ div.evenPost
     clear: both;
     visibility: hidden;
 }
+#whiteOverlay
+{
+	}
 #main
 {	
- box-shadow: 4px 4px 7px 4px #888888;
+ /*box-shadow: 4px 4px 7px 4px #888888;
 	-webkit-box-shadow: 4px 4px 7px 4px #888888; 
 	-moz-box-shadow: 4px 4px 7px 4px #888888; 
 	/*border:1px solid black; */

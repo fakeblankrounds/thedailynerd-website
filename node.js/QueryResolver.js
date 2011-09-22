@@ -84,18 +84,21 @@ exports.blogServ = function () {
 		console.log(JSON.stringify(range));
 		var resp = "";
 		if(range[0] < range[1]){
-		for(var i = range[0]; i < range[1]; i++)
+		for(var i = range[1]; i >= range[0]; i--)
 		{
+			
 			var p = PC.getPost(PC.getPostByNumber(i));
+			console.log(PC.getPostByNumber(i) + "____" + i);
 			if(p != undefined)
 				resp += p;
 		}
 		}
 		else
 		{
-		for(var i = range[1]; i > range[0]; i--)
+		for(var i = range[0]; i >= range[1]; i--)
 		{
 			var p = PC.getPost(PC.getPostByNumber(i));
+			console.log(PC.getPostByNumber(i) + "____" + i);
 			if(p != undefined)
 				resp += p;
 		}
