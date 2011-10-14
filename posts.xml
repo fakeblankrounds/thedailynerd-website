@@ -3,12 +3,23 @@
 
 <post>
 <path>
-/posts/how-many-cs.html
+/posts/nodejsisgood.html
 </path>
 <tags>
-cs,funny,freshman
+nodejs,node.js,zombie,outbreak,kehn,dziuba,server
 </tags>
 </post>
+
+
+<post>
+<path>
+/posts/zombie-outbreak.html
+</path>
+<tags>
+android,app,zombie,outbreak,fake,blank,rounds
+</tags>
+</post>
+
 
 
 <post>
@@ -20,5 +31,13 @@ daily,nerd,welcome,techstack,tech,stack
 </tags>
 </post>
 
+<post>
+<path>
+/posts/how-many-cs.html
+</path>
+<tags>
+cs,funny,freshman
+</tags>
+</post>
 
 </root>

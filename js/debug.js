@@ -54,7 +54,7 @@
 	function(){
 		$(this).siblings().show('fast');
 		$(this).animate({
-		height:"23%"
+		height:"25%"
 		},500);
 		$(this).removeClass("Border");
 		$(this).children(".headline").show('fast');

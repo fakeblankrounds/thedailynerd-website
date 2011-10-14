@@ -7,7 +7,7 @@ FFFFFF
 */
 html
 {
-background-color:#E5E5E5;
+background-color:#F5F5F5;
 }
 body
 {
@@ -21,7 +21,7 @@ body
 	font-weight:bold;
 	font-size:16px;
 	color:#444;
-	background-color:#E5E5E5;
+	
 	font-family:  'Helvetica Neue', Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 
 	}
@@ -29,6 +29,7 @@ a
 {
 	color:#6E85B8;
 	text-decoration:none;
+	text-shadow: 0px 1px 0px #FFFFFF;
 }
 a:visited
 {
@@ -64,29 +65,34 @@ h1
 	font-size:2.5em;
 	margin:0px;
 	color:#444;
+	text-shadow: 0px 1px 0px #FFFFFF;
 }
 h2
 {
 	font-size:2em;
 	margin:0px;
 	color:#888;
+	text-shadow: 0px 1px 0px #FFFFFF;
 }
 h3
 {
 	font-size:1.5em;
 	margin:0px;
 	color:#aaa;
+	text-shadow: 0px 1px 0px #FFFFFF;
 }
 h4
 {
 	font-size:1.3em;
 	text-align:left;
 	margin-left:0.8em;
+	text-shadow: 0px 1px 0px #FFFFFF;
 }
 h5
 {
 	font-size:1.3em;
 	text-align:left;
+	text-shadow: 0px 1px 0px #FFFFFF;
 }
 h1.shift
 {
@@ -97,6 +103,10 @@ h4.readable
 	line-height:1.5em;
 	letter-spacing:0em;
 	/*font-family:  'Helvetica Neue', Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;*/
+}
+.tag
+{
+	display:inline;
 }
 .expandable
 {
@@ -140,7 +150,6 @@ div.buttonbox
 	padding-left:1em;
 	padding-right:1em;
 	/*font-family:   'Helvetica Neue', Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;*/
-	margin: 1px;
 	/* box-shadow: 5px 5px 5px #888888;
 	-webkit-box-shadow: 5px 5px 5px #888888; */
 	text-align: center;
@@ -178,7 +187,7 @@ div.sidebox
 div.mainbox
 {
 	float:left;
-	width:60%;
+	width:65%;
 	padding:0em;
 	height:100%;
 }
@@ -197,10 +206,12 @@ background: -ms-linear-gradient(top, rgba(110,133,184,0.1) 0%,rgba(110,133,184,0
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a6e85b8', endColorstr='#1a6e85b8',GradientType=0 ); /* IE6-9 */
 background: linear-gradient(top, rgba(110,133,184,0.1) 0%,rgba(110,133,184,0.15) 50%,rgba(110,133,184,0.1) 100%); /* W3C */
 padding:1em;
+border-left:2px solid #bbb;
 }
 div.evenPost
 {
 	padding:1em;
+	border-left:2px solid #bbb;
 }
 
 .clearfix:after {
@@ -243,6 +254,7 @@ div.evenPost
 	padding-top: 0.3em;
 	padding-bottom: 0.2em;
 	margin-bottom:0.2em;
+	text-shadow: 0px 1px 0px #FFFFFF;
 	}
 #Calendar
 {
@@ -321,7 +333,7 @@ div.CalWidget
 {
 	position:relative;
 	width:100%;
-	height:15em;
+	height:13em;
 	text-align: center;
 	z-index:1;
 	text-align:left;
@@ -335,13 +347,12 @@ p.headline
 	color:#6E85B8;
 	width:100%;
 	margin:0em;
-	margin-top:0.5em;
 	font-size:1em;
 }
 .time
 {
 	color:#165170;
-	visibility:hidden;
+	display:none;
 }
 
 div.CalBar
@@ -358,7 +369,6 @@ background: linear-gradient(top, rgba(189,195,191,0.2) 0%,rgba(128,145,163,0.2) 
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
 	border:1px solid rgba(136,136,136,0.3);
-	
 }
 
 div.MidBar
@@ -368,7 +378,7 @@ width:100%;
 	/*background: rgba(128,145,163,0.2);*/
 	border:1px solid rgba(136,136,136,0.3);
 	border-top:0px solid #000;
-	
+
 }
 
 div.BotBar
@@ -387,7 +397,7 @@ background: linear-gradient(top, rgba(128,145,163,0.2) 0%,rgba(189,195,191,0.2) 
 	border-bottom-right-radius:10px;
 	border:1px solid rgba(136,136,136,0.3);
 	border-top:0px solid #000;
-	
+
 
 }
 div.Border
