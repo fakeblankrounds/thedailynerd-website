@@ -1,4 +1,6 @@
  $(document).ready(function(){
+ 
+	
 
    var overlayShowing = false;
    $("#settings").toggle(function(){
